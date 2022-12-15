@@ -30,11 +30,6 @@ async function fetchAllPosts() {
       }'> read more...</a></p> <br> <p>${postDate.getFullYear()}-${
         postDate.getMonth() + 1
       }-${postDate.getDate()}</p>
-                    
-                    <div>
-                        <a id="update" href="#">Update</a> |
-                        <a id="delete" href="#">Delete</a> 
-                    </div>
                     </div>
             `;
     }
