@@ -20,22 +20,16 @@ async function fetchAllPosts() {
                 <p><i>${post.author}</i></p>
                 <p><b>tags:</b>${post.tags}</p>
 
-                    <p>${post.content.substr(
-                      0,
-                      maxL
-                    )}<a class="read-more" href="post.html?id=${
+                <p>${post.content.substr(
+                  0,
+                  maxL
+                )}<a class="read-more" href="post.html?id=${
         post._id
-      }" data-id='${
-        post._id
-      }'> read more...</a></p> <br> <p>${postDate.getFullYear()}-${
+      }" data-id='${post._id}'> read more...</a></p><br>
+                <p>${postDate.getFullYear()}-${
         postDate.getMonth() + 1
       }-${postDate.getDate()}</p>
-                    
-                    <div>
-                        <a id="update" href="#">Update</a> |
-                        <a id="delete" href="#">Delete</a> 
-                    </div>
-                    </div>
+      </div>
             `;
     }
 
