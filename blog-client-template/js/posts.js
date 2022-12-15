@@ -23,7 +23,11 @@ async function fetchAllPosts() {
                     <p>${post.content.substr(
                       0,
                       maxL
-                    )}<a href="post.html"> read more...</a></p> <br> <p>${postDate.getFullYear()}-${
+                    )}<a class="read-more" href="post.html?id=${
+        post._id
+      }" data-id='${
+        post._id
+      }'> read more...</a></p> <br> <p>${postDate.getFullYear()}-${
         postDate.getMonth() + 1
       }-${postDate.getDate()}</p>
                     
